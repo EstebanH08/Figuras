@@ -16,7 +16,7 @@ int main(void){
   turtleGoTo(t, 100.0f,190.0f);
   turtlePenDown(t);
 
-  turtleSetColor(t, 255, 100, 5);
+  turtleSetColor(t, 255, 10, 5);
   turtleSetSpeed(t, 1.0f);
   
   turtleLeft(t, 90.0f);
@@ -47,7 +47,7 @@ void tree(Turtle *t, float dist, int ramas){
 	turtleLeft(t, 30);
 	turtleBackward(t, dist);
 }
-
+//a
 
 
 
