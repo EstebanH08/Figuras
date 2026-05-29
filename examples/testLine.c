@@ -17,11 +17,11 @@ int main(void){
   turtlePenDown(t);
 
   turtleSetColor(t, 255, 10, 5);
-  turtleSetSpeed(t, 1.0f);
+  turtleSetSpeed(t, 5.0f);
   
   turtleLeft(t, 90.0f);
   
-  tree(t, 60, 4);
+  tree(t, 60, 5);
   
 
   turtleAppRun(app);
@@ -34,6 +34,11 @@ void tree(Turtle *t, float length, int depth){
 		return ;
 	}
 	
+	if(depth > 3)
+	       turtleSetColor(t, 20, 100, 200);
+	if(depth <= 3 && depth > 1)
+		turtleSetColor(t, 100, 250, 100);	
+
 	turtleForward(t, length);
 
 	turtleLeft(t, 30);	
