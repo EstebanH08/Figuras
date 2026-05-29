@@ -38,13 +38,15 @@ void tree(Turtle *t, float length, int depth){
 
 	turtleLeft(t, 30);	
 	tree(t, length * 0.7f, depth -1);
-	
-	turtleRight(t, 60);
+
+	turtleRight(t, 30);
 	tree(t, length * 0.7f, depth - 1);
 	
+	turtleRight(t, 30);
+	tree(t, length * 0.7f, depth - 1);
 	
 	turtleLeft(t, 30);
-	turtleBackward(t, length	);
+	turtleBackward(t, length);
 }
 
 
