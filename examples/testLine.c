@@ -35,9 +35,9 @@ void tree(Turtle *t, float length, int depth){
 	}
 	
 	if(depth > 2)
-	       turtleSetColor(t, 20, 100, 200);
+	       turtleSetColor(t, 111, 78, 50);
 	else if(depth > 0)
-		turtleSetColor(t, 100, 250, 100); 
+		turtleSetColor(t, 134, 252, 0); 
 
 	turtleForward(t, length);
 
@@ -54,9 +54,9 @@ void tree(Turtle *t, float length, int depth){
 	turtleBackward(t, length);
 
 	if(depth > 2)
-		turtleSetColor(t, 20, 100, 200);
+		turtleSetColor(t, 134, 78, 50);
 	else if(depth > 0)
-		turtleSetColor(t, 100, 250, 100);
+		turtleSetColor(t, 124, 252, 0);
 }
 
 
