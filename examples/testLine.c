@@ -29,23 +29,22 @@ int main(void){
   return 0;
 }
 
-void tree(Turtle *t, float dist, int ramas){
-	if(ramas == 0){
-		
+void tree(Turtle *t, float length, int depth){
+	if(depth == 0 || length < 5){
 		return ;
 	}
 	
-	
-	turtleForward(t, dist);
+	turtleForward(t, length);
+
 	turtleLeft(t, 30);	
-	tree(t, dist / 1.9f, ramas -1);
+	tree(t, length * 0.7f, depth -1);
 	
 	turtleRight(t, 60);
-	tree(t, dist / 1.9f, ramas - 1);
+	tree(t, length * 0.7f, depth - 1);
 	
 	
 	turtleLeft(t, 30);
-	turtleBackward(t, dist);
+	turtleBackward(t, length	);
 }
 
 
