@@ -47,7 +47,7 @@ void tree(Turtle *t, float dist, int ramas){
 	turtleLeft(t, 30);
 	turtleBackward(t, dist);
 }
-//a
+
 
 
 
