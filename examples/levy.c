@@ -35,6 +35,11 @@ void levy ( Turtle * turtle , float length , int depth ) {
 		turtleForward ( turtle , length ) ;
 		return ;
 	}
+	
+	if(depth > 3)
+		turtleSetColor(t, 0, 255, 20);
+	else
+		turtleSetColor(t, 20, 20, 255);
 
 	turtleLeft ( turtle , 45) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
