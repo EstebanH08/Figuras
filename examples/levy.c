@@ -39,7 +39,7 @@ void levy ( Turtle * turtle , float length , int depth ) {
 	turtleLeft ( turtle , 30) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
-	turtleRight ( turtle , 90) ;
+	turtleRight ( turtle , 60) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
 	turtleLeft ( turtle , 30) ;
