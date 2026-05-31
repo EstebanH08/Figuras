@@ -13,7 +13,7 @@ int main(void) {
   Turtle *turtle = turtleAppGetTurtle(app);
 
   turtlePenUp(turtle);
-  turtleGoTo(turtle, 175.0f,120.0f);
+  turtleGoTo(turtle, 160.0f,120.0f);
   turtlePenDown(turtle);
 
   turtleSetColor(turtle, 255, 10, 5);
@@ -36,11 +36,11 @@ void levy ( Turtle * turtle , float length , int depth ) {
 		return ;
 	}
 
-	turtleLeft ( turtle , 45) ;
+	turtleLeft ( turtle , 30) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
 	turtleRight ( turtle , 90) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
-	turtleLeft ( turtle , 45) ;
+	turtleLeft ( turtle , 30) ;
 }
