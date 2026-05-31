@@ -13,13 +13,11 @@ int main(void) {
   Turtle *turtle = turtleAppGetTurtle(app);
 
   turtlePenUp(turtle);
-  turtleGoTo(turtle, 200.0f,190.0f);
+  turtleGoTo(turtle, 175.0f,120.0f);
   turtlePenDown(turtle);
 
   turtleSetColor(turtle, 255, 10, 5);
   turtleSetSpeed(turtle, 5.0f);
-  
-  turtleLeft(turtle, 90.0f);
   
   levy(turtle, 60,6);
   
