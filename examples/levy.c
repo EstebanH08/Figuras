@@ -1,10 +1,33 @@
-#include <stdio.h>
+#include "turtlec.h"
+#include <math.h>
 
 
-
+void levy(Turtle *turtle, float length, int depth);
 
 int main(void) {
-    
+  TurtleApp *app = turtleAppCreate(400, 200, "Test Line");
+
+  if(app == NULL)
+    return 1;
+
+  Turtle *turtle = turtleAppGetTurtle(app);
+
+  turtlePenUp(turtle);
+  turtleGoTo(turtle, 200.0f,190.0f);
+  turtlePenDown(turtle);
+
+  turtleSetColor(turtle, 255, 10, 5);
+  turtleSetSpeed(turtle, 5.0f);
+  
+  turtleLeft(turtle, 90.0f);
+  
+  levy(turtle, 60,6);
+  
+
+  turtleAppRun(app);
+  turtleAppDestroy(app);
+  return 0;
+
 }
 
 
