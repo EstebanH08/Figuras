@@ -21,7 +21,7 @@ int main(void){
   
   turtleLeft(t, 90.0f);
   
-  tree(t, 60, 5);
+  tree(t, 60, 3);
   
 
   turtleAppRun(app);
@@ -58,27 +58,3 @@ void tree(Turtle *t, float length, int depth){
 	else if(depth > 0)
 		turtleSetColor(t, 124, 252, 0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
