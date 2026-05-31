@@ -19,7 +19,7 @@ int main(void) {
   turtleSetColor(turtle, 255, 10, 5);
   turtleSetSpeed(turtle, 5.0f);
   
-  levy(turtle, 80,8);
+  levy(turtle, 80, 2);
   
 
   turtleAppRun(app);
@@ -39,7 +39,7 @@ void levy ( Turtle * turtle , float length , int depth ) {
 	turtleLeft ( turtle , 30) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
-	turtleRight ( turtle , 60) ;
+	turtleRight ( turtle , 120) ;
 	levy ( turtle , length / sqrt (2) , depth - 1) ;
 
 	turtleLeft ( turtle , 30) ;
