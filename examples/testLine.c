@@ -42,13 +42,13 @@ void tree(Turtle *t, float length, int depth){
 	turtleForward(t, length);
 
 	turtleLeft(t, 70);	
-	tree(t, length * 0.7f, depth -1);
+	tree(t, length * 0.4f, depth -1);
 
 	turtleRight(t,70);
-	tree(t, length * 0.7f, depth - 1);
+	tree(t, length * 0.4f, depth - 1);
 	
 	turtleRight(t, 70);
-	tree(t, length * 0.7f, depth - 1);
+	tree(t, length * 0.4f, depth - 1);
 	
 	turtleLeft(t, 70);
 	turtleBackward(t, length);
