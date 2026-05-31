@@ -1,6 +1,25 @@
 #include <stdio.h>
 
+
+
+
 int main(void) {
-    printf("Hola mundo\n");
-    return 0;
+    
+}
+
+
+
+void levy ( Turtle * turtle , float length , int depth ) {
+	if( depth == 0) {
+		turtleForward ( turtle , length ) ;
+		return ;
+	}
+
+	turtleLeft ( turtle , 45) ;
+	levy ( turtle , length / sqrt (2) , depth - 1) ;
+
+	turtleRight ( turtle , 90) ;
+	levy ( turtle , length / sqrt (2) , depth - 1) ;
+
+	turtleLeft ( turtle , 45) ;
 }
